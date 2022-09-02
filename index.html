@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./books.js"></script>
+    <script src="./libraryRender.js"></script>
+    <script src="./Search.js"></script>
+    <script src="./Import.js"></script>
+    <script src="./rating.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body onload="RenderFn(books)">
+    <div id="ImportPane">
+        <input id="SearchTitle" type="text" placeholder="Enter the Title"></input>
+        <input id="SearchSubtitle" type="text" placeholder="Enter the Subtitle"></input>
+        <input id="SearchAuthor" type="text" placeholder="Enter the Author"></input>
+        <input id="SearchCategory" type="text" placeholder="Enter the Category"></input>
+        <input id="SearchPublisher" type="text" placeholder="Enter the Publisher"></input>
+        <button id="Importbutton" type="button" onclick="ImportData()">Add</button>
+        <button id="Clearbutton" type="button" onclick="CleartData()">Clear</button>
+        <br />
+        <br />
+    </div>
+    <div id="InputPane">
+        <input id="Searchbox" type="text" placeholder="Enter the word"></input>
+        <button id="Searchbutton" type="button" onclick="SearchWord()">Search</button>
+        <button id="Clearbutton2" type="button" onclick="CleartWord()">Clear</button>
+        <button id="Resetbutton" type="button" onclick="ResetWord()">Reset</button>
+    </div>
+    <div id="ListDiv"></div>
+</body>
+</html>
